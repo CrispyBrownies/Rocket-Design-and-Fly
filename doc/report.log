@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.8)  11 MAY 2021 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.8)  11 MAY 2021 19:27
 entering extended mode
 **c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex
 (c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex
@@ -631,15 +631,12 @@ Package pdftex.def Info: ./figures/ideal.png  used on input line 354.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--366
+Underfull \hbox (badness 10000) in paragraph at lines 359--365
 
  []
 
 
-LaTeX Warning: Reference `fig:idealCurve' on page 7 undefined on input line 369.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 368--377
+Underfull \hbox (badness 10000) in paragraph at lines 367--376
 
  []
 
@@ -647,37 +644,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--377
 <./figures/geoImprov.png, id=39, 693.34032pt x 479.54156pt>
 File: ./figures/geoImprov.png Graphic file (type png)
 <use ./figures/geoImprov.png>
-Package pdftex.def Info: ./figures/geoImprov.png  used on input line 380.
+Package pdftex.def Info: ./figures/geoImprov.png  used on input line 379.
 (pdftex.def)             Requested size: 407.66833pt x 281.9685pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--394
+Underfull \hbox (badness 10000) in paragraph at lines 384--393
+
+ []
+
+<./figures/improv2.png, id=40, 693.34032pt x 479.54156pt>
+File: ./figures/improv2.png Graphic file (type png)
+<use ./figures/improv2.png>
+Package pdftex.def Info: ./figures/improv2.png  used on input line 396.
+(pdftex.def)             Requested size: 407.66833pt x 281.9685pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 401--409
 
  []
 
 [8 <./figures/ideal.png>]
-<./figures/improv2.png, id=44, 693.34032pt x 479.54156pt>
-File: ./figures/improv2.png Graphic file (type png)
-<use ./figures/improv2.png>
-Package pdftex.def Info: ./figures/improv2.png  used on input line 397.
-(pdftex.def)             Requested size: 407.66833pt x 281.9685pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 402--410
-
- []
-
 <./figures/burnprof.png, id=45, 475.7775pt x 305.64188pt>
 File: ./figures/burnprof.png Graphic file (type png)
 <use ./figures/burnprof.png>
-Package pdftex.def Info: ./figures/burnprof.png  used on input line 413.
+Package pdftex.def Info: ./figures/burnprof.png  used on input line 412.
 (pdftex.def)             Requested size: 362.37569pt x 232.80324pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -691,7 +688,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 437--447
 
  []
 
-[11]
+[11
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
@@ -703,21 +702,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
 [13] [14] [15] [16] [17] 
 AED: lastpage setting LastPage
-[18] (report.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[18] (report.aux) ) 
 Here is how much of TeX's memory you used:
- 9730 strings out of 479321
- 151176 string characters out of 2856584
+ 9729 strings out of 479321
+ 151164 string characters out of 2856584
  997085 words of memory out of 3000000
- 26661 multiletter control sequences out of 15000+600000
+ 26660 multiletter control sequences out of 15000+600000
  527583 words of font info for 328 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,11n,77p,361b,1807s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/type1/public/fourier/fourier-ms.pfb><C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putb8a.pfb><C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putr8a.pfb><C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on report.pdf (19 pages, 335562 bytes).
+Output written on report.pdf (19 pages, 335153 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

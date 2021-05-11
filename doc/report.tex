@@ -92,7 +92,7 @@
 
 The purpose of this final project is to explore the process of designing and testing sounding rockets given the desired design specifications using contraints based on trajectory theory, propulsion systems, structural strength of materials, and flight stability.
 To build the rockets, a number of inputs will be required to define the rocket's physical shape and properties.
-By comparing and analyzing the flight properties of the resultant rockets with their input parameters, we shoul de able to determine how input parameters affect the properties of the rocket.
+By comparing and analyzing the flight properties of the resultant rockets with their input parameters, we should be able to determine how input parameters affect the properties of the rocket.
 To simplify and limit the infinite number of designs that are possible when designing a rocket, the following basic geometry is followed for all of the rockets built.
 
 \begin{figure}[h!]
@@ -327,14 +327,14 @@ These results make sense because to get increased thrust and acceleration, the b
 The decreased equivalent velocity means lower pressure ratio which leads to thinner shell thickness. 
 The mass of the propellant must increase drastically, with the highest acceleration case having more than four times the propellant compared to the lowest case.
 Because of this, the rocket also requires more shell material (more than double) which further increased the total mass of the rocket.
-We can also see that due to the increased mass while payload mass remains constant, the payload ratio drastically decreased to about 25\%. \\
+We can also see that due to the increased mass while payload mass remains constant, the payload ratio drastically decreased by about 75\%. \\
 
 \noindent Analyzing cases 7-9, we can see that changing the static margin $SM$ does not affect the rocket's flight properties but instead affect the rocket's size.
 By increasing the static margin of the rocket, the length, CG location, CP location, and structural ratio also increased.
 The rocket's diameter and payload ratio decreased however with increasing static margin. 
 This result tells us that by increasing the static margin of the rocket, the resultant rocket will becomes skinnier, with larger L and smaller D. 
 Because of this, the location of the center of gravity and center of pressure must move with the increased length.
-The mass of the propellant also inreased slightly (\textasciitilde0.6\%), most likely due to the slightly increased shell mass and overall mass due to the longer rocket body.
+The mass of the propellant also increased slightly (\textasciitilde0.6\%), most likely due to the slightly increased shell mass and overall mass from the longer rocket body.
 The structural ratio increased by a larger percentage (\textasciitilde12.9\%) because the shell mass increased more than the propellant mass, \textasciitilde13.7\% compared to \textasciitilde0.6\%.\\
 
 \begin{figure}[h!]
@@ -357,23 +357,22 @@ The slight error in the CP location may be because we used the method prescribed
 \end{figure}
 
 \noindent Figure \ref{fig:ideal} shows the simulated ideal flight of the OpenRocket model where drag is ignored. 
-The simulation results tells us that the maximum altitude achieved by the rocket is 6134 meters which closely matches the expected altitude of 6096 meters, resulting in a 0.60\% error.
+The simulation results tells us that the maximum altitude achieved by the rocket is 6134 m which closely matches the expected altitude of 6096 m, resulting in a 0.60\% error.
 The expected maximum velocity of the rocket was calculated to be 309.24 $\frac{m}{s}$.
 The simulated flight returned a maximum velocity of 309.84 $\frac{m}{s}$, resulting in an error of 0.19\%.
 The maximum normalized acceleration from the simulated flight was 9.89 which is very close to the expected value of 10, resulting in an error of 1.09\%.
-This result tells us that the ideal flight case simulated in OpenRocket very closely matches our expected results.
-This accuracy is due to us ignoring the drag component of the rocket's flight.\\
+The accuracy of our result is due to us ignoring the drag component of the rocket's flight.\\
 
 
-\noindent Figure \ref{fig:ideal} shows the simulated flight of the OpenRocket model where drag is not ignored.
-Comparing this figure to Fig. \ref{fig:idealCurve}, we can see that the drag drastically affected the rocket's maximum height, velocity, and acceleration.
-The simulated maximum altitude of the drag affected flight was only 1874 meters, 69.26\% less than the expected value and 69.49\% less than the idealized case.
+\noindent Figure \ref{fig:ideal} also shows the simulated flight of the OpenRocket model where drag is not ignored.
+Comparing to the ideal flight, we can see that the drag drastically affected the rocket's maximum height, velocity, and acceleration.
+The simulated maximum altitude of the drag affected flight was only 1874 m, 69.26\% less than the expected value and 69.49\% less than the idealized case.
 The maximum velocity of the drag affected flight was also lower at 215.31 $\frac{m}{s}$, 30.37\% less than the expected value and 30.51\% less than the idealized case.
 The maximum normalized acceleration of the drag affected flight was not only lower at 7.96 but also in the negative direction due to drag stopping the rocket from climbing.
 The maximum normalized acceleration of the flight was 20.39\% less than the expected value and 19.50\% less than the idealized case.
 These results tell us that drag severely impacted the rocket's ability to fly, inhibiting the rocket's ability to reach even 50\% of the expected maximum altitude.
 Because of this, this rocket does not satisfy baseline case conditions.
-This result is expected because the equations used when configuring the rocket ignores the affect of drag.\\
+This result is expected because the equations used when configuring the rocket ignores the effect of drag.\\
 
 \begin{figure}[h!]
     \centering
@@ -388,7 +387,7 @@ Of the five choices available in OpenRocket, the Haack Series cone shape appears
 From Fig. \ref{fig:geoImprov}, we can see that by switching the conical nose cone out for the Haack Series nose cone, the max. altitude of the rocket increased from 1874 meters to 2235 meters, an increase of 19.26\%.
 Another improvement made to the rocket was to give the fins of the rocket an airfoil cross-section and removing one of the fins, resulting in a three-fin design.
 Although doing so changed the center of pressure and center of mass of the rocket, the change was very small at only 3.04\%.
-With the changes in the fins, the max. altitude of the rocket increased to 2253 meters, an improvement of 0.81\% from the previous and a total improvement of 20.22\% over the base design.
+With the changes in the fins, the max. altitude of the rocket increased to 2253 m, an improvement of 0.81\% from the previous and a total improvement of 20.22\% over the base design.
 Like the max. altitude, the max. velocity of the rocket increased from 215.31 $\frac{m}{s}$ to 242.73 $\frac{m}{s}$ (+12.74\%).
 The max. acceleration of the rocket actually decreased due to the more aerodynamic design, decreasing from 7.96 to 6.16 (-22.76\%).\\
 
@@ -403,7 +402,7 @@ The max. acceleration of the rocket actually decreased due to the more aerodynam
 The purpose of changing the rocket's material is that lighter rockets require less force to accelerate.
 We will assume that the new material will be strong enough to withstand the internal pressures of the rocket since the shell mass is only a small portion of the rocket's total mass anyways.
 Instead of carbon-epoxy, weighing at about 1.82 $\frac{g}{cm^3}$, the material for the rocket shell was changed to be balsa, which only weighs 0.17 $\frac{g}{cm^3}$, roughly 10 times less.
-We can see from Fig. \ref{fig:improv2} that changing the material of the rocket increased the maximum altitude of the rocket from 2253 meters to 2264 meters, an increase of 0.49\%.
+We can see from Fig. \ref{fig:improv2} that changing the material of the rocket increased the maximum altitude of the rocket from 2253 m to 2264 m, an increase of 0.49\%.
 This increase in maximum altitude is very small because the propellant was what contributed to most of the rocket's weight, not its shell.
 The max. velocity and max. acceleration of the rocket increased slightly from 242.73 $\frac{m}{s}$ to 246.64 $\frac{m}{s}$ (+1.61\%) and 6.16 to 6.57 (+6.48\%) respectively.
 \\
@@ -419,11 +418,12 @@ The max. velocity and max. acceleration of the rocket increased slightly from 24
 A new burn profile was created where instead of a linear burn throughout the entire burn time, the propellant was burnt faster towards the launch and slower as the burn carries on.
 Figure \ref{fig:burnprof} shows the burn profile of this new engine.
 Although the new engine has the same impulse, propellant mass, and burn time as the old one, the new engine should be more efficient as less propellant is wasted trying to accelerate the rocket after it has gained speed, reducing fuel waste due to drag.
-We can see from Fig. \ref{fig:improv2} that with the new burn profile, the rocket's max. altitude increased from 2264 meters to 2639 meters, an increase of 16.12\%.
+We can see from Fig. \ref{fig:improv2} that with the new burn profile, the rocket's max. altitude increased from 2264 m to 2639 m, an increase of 16.12\%.
 The max. velocity and max. acceleration decreased from 246.64 $\frac{m}{s}$ to 213.64 $\frac{m}{s}$ (-13.38\%) and 6.57 to 6.65 (-44.45\%).
-Although the max. velocity decreased, the rocket increased in velocity much sooner, allowing it to travel at fast speed for longer, resulting in greater altitude. 
+Although the max. velocity decreased, the rocket increased in velocity much sooner, allowing it to travel at high speed for longer, resulting in greater altitude. 
 
-\newpage
+
+\clearpage
 \section*{Summary and Conclusion}
 \addcontentsline{toc}{section}{Summary and Conclusion}
 
@@ -434,16 +434,16 @@ This leads to increased internal pressure and requires a thicker shell to contai
 To increase the normalized acceleration of the rocket, we must also drastically increase the amount of propellant while also decreasing the burnout time, equivalent velocity, and internal pressure.
 Finally, if we want to increase the static margin of the rocket, we must make the rocket longer and thinner.\\
 
-\noindent The OpenRocket software very helpful and allowed us to experiment by test-flying different rocket configurations.
+\noindent The OpenRocket software was very helpful in part II of the project and allowed us to experiment by test-flying different rocket configurations.
 From the experimentation, we found out that drag plays a very big role in rocket performance. 
 By considering drag, the maximum altitude reached by our rocket decreased by 69.26\%, resulting in less than half the height.
-However, by changing certain design parameters of our rocket, we were able to improve our rockets performance.
+However, by changing certain design parameters of our rocket, we were able to improve our rocket's performance.
 By changing the conical nose cone for a Haack Series nose cone, we increased our max. altitude by 19.26\%.
 We found out that altering the fin geometry does not seem to have a drastic effect on the performance although it would have a larger effect on rockets that do not fly straight up.
-Changing the material of the rocket shell also did not seem to have much of an effect on performance because the propellant was responsible for most of the rocket's weight, not its shell.
+Changing the material of the rocket shell also did not seem to have much of an effect on performance because the propellant was responsible for most of the rocket's weight, not the shell.
 Altering the rocket engine's burn profile however did make a big impact on the rocket's performance.
 By letting the rocket burn faster towards the beginning of launch and decreasing the burn towards the end, we were able to increase the rocket's max. altitude by 16.12\%.
-In total, with all of the improvements on the rocket, we were able to increase it's max. altitude from 1874 meters to 2639 meters, resulting in an increase of 40.82\%.\\
+In total, with all of the improvements on the rocket, we were able to increase its max. altitude from 1874 m to 2639 m, resulting in an increase of 40.82\%.\\
 
 \noindent From this study, the most important thing we learned is that drag cannot be ignored for a rocket due to its high speed.
 Although a rocket is already aerodynamic, drag scales exponentially as velocity increases.

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1620767041 "c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex" "report.pdf" "report" 1620767044
+["pdflatex"] 1620775664 "c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex" "report.pdf" "report" 1620775753
   "C:/Users/Steph/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1620525554 9524576 33c8979937be6249c3edd97cf74e8ffe ""
   "C:/Users/Steph/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1620526256 82665 3eb0bcc9d631fc78d736d6e53fe0e9b2 ""
   "C:/Users/Steph/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -103,18 +103,18 @@
   "C:/Users/Steph/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388494052 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Steph/AppData/Local/Programs/MiKTeX/tex/latex/was/gensymb.sty" 1081526300 4755 29d19942d7123701aa6a3876b9ba11b1 ""
   "C:/Users/Steph/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044406800 26220 3701aebf80ccdef248c0c20dd062fea9 ""
-  "c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex" 1620767040 35330 43d66b10e7e8bdab4ab95dffc6a1ff69 ""
+  "c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex" 1620775752 35195 ba6791e9678caf1a397c779b6b97fe68 ""
   "figures/burnprof.png" 1620710792 11174 ae242934fa0220d1bf19bf9f67740ae1 ""
   "figures/geoImprov.png" 1620704008 69960 4d9611598d8f06e3783e6440d87a0002 ""
   "figures/ideal.png" 1620730154 48374 d59eef2b7cf5d07baeed62c4edd7b842 ""
   "figures/improv2.png" 1620713551 83814 54d00f1f6df3c83c20bdda0a5a242bc8 ""
   "figures/rocketDesign.png" 1620682914 18810 093a0f953c67427152e99b5b245f3a0b ""
   "figures/rocketShape.png" 1620597878 35104 a141c96704f8567f81cf6bc0cc18a81e ""
-  "report.aux" 1620767044 2535 4c50b6cd7947539920c8274cc2390eaf "pdflatex"
-  "report.tex" 1620767040 35330 43d66b10e7e8bdab4ab95dffc6a1ff69 ""
-  "report.toc" 1620767044 271 4d83576cb01dea769fd8b45f1655e0dc "pdflatex"
+  "report.aux" 1620775667 2535 4c50b6cd7947539920c8274cc2390eaf "pdflatex"
+  "report.tex" 1620775752 35195 ba6791e9678caf1a397c779b6b97fe68 ""
+  "report.toc" 1620775667 271 4d83576cb01dea769fd8b45f1655e0dc "pdflatex"
   (generated)
-  "report.log"
+  "report.pdf"
   "report.aux"
   "report.toc"
-  "report.pdf"
+  "report.log"
