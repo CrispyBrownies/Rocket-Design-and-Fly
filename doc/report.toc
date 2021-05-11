@@ -2,4 +2,5 @@
 \contentsline {section}{Problem Statement}{2}{}%
 \contentsline {section}{Method of Solution}{4}{}%
 \contentsline {section}{Discussion of Results}{6}{}%
-\contentsline {section}{Appendix}{11}{}%
+\contentsline {section}{Summary and Conclusion}{11}{}%
+\contentsline {section}{Appendix}{12}{}%

@@ -3,7 +3,6 @@
 # Created: 4/23/2021
 
 import math
-# import plotly.graphic_objects as go
 
 # Defining inputs
 Ml = 5  # Payload Mass [kg]
@@ -11,9 +10,9 @@ ps = 1820  # Shell Density (carbon-epoxy) [1kg/m^3]
 pp = 1772  # Propellant Density (66 − 78% AP, 18% organic polymer, 4 − 20% Al) [kg/m^3]
 sigs = 80000000  # Shell Working Stress [Pa]
 N = 4  # Number of fins
-hmaxList = [6096]  #[3048, 6096, 9144]  # Maximum Altitude [m] (10k, 20k, 30k ft)
-amaxList = [10]  # [5, 10, 20]  # Normalized Max Acceleration
-SMList = [2]  #[1, 2, 3]  # Static Margin (Xcp-Xcg)/D
+hmaxList = [3048, 6096, 9144]  # Maximum Altitude [m] (10k, 20k, 30k ft)
+amaxList = [5, 10, 20]  # Normalized Max Acceleration
+SMList = [1, 2, 3]  # Static Margin (Xcp-Xcg)/D
 g = 9.81  # Acceleration due to Gravity [m/s^2]
 
 # Defining constants
@@ -198,13 +197,6 @@ def ConfigureRockets():
         newRock.CalcLambda()
         newRockets.append(newRock)
 
-
-# def CreateTable(rocketList):
-#     fig = go.Figure(data=[go.Table(
-#         header = dict(values=['Cases', 'Ropt', 'Weq', 'tb', 'p0/pa', 'delta/D', 'D', 'L/D', 'Xcg', 'Xcp', 'Mp', 'Ms', 'Mo', 'lambda', 'e'])
-#     )])
-
-
 CreateRockets9()
 ConfigureRockets()
 
@@ -215,12 +207,3 @@ for each in newRockets:
     print(each)
     print('')
 
-
-# rocket = Rocket(3048, 6, 1)
-# rocket.Eq1()
-# rocket.l, rocket.d = 2.7, .5
-# rocket.Eq2()
-# rocket.CalcLambda()
-# print(rocket)
-# print(rocket.Xcg)
-# print(rocket.Xcp)

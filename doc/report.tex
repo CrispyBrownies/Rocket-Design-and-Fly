@@ -14,6 +14,7 @@
 \usepackage{float}
 \usepackage{gensymb}
 \usepackage{amsmath}
+\usepackage{listings}
 \graphicspath{ {./images/}}
 
 
@@ -34,6 +35,23 @@
 %-------------------------------------------------------------------------------
 % TITLE PAGE
 %-------------------------------------------------------------------------------
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+%   basicstyle={\small\ttfamily},
+  numbers=none,
+%   numberstyle=\tiny\color{gray},
+%   keywordstyle=\color{blue},
+%   commentstyle=\color{dkgreen},
+%   stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
 
 \begin{document}
 \title{ \normalsize \textsc{ }
@@ -170,16 +188,6 @@ These equations are viable because we are assuming a linear burn with the chemic
 
 \noindent where $R_{opt}$ is the optimal mass ratio, representing the ratio of initial to burnout mass of the rocket, $W_{eq}$ is the equivalent velocity of the rocket, and $t_b$ is the burnout time.
 These values can then be used to calculate the equivalent Mach number $M_{eq}$ and total pressure $P_0$ within the rocket's combustion chamber.
-The speed of sound and atmospheric pressure was found assuming that the rocket is fired and travels near the surface of the Earth. 
-With this assumption, the speed of sound and atmospheric pressure becomes: 
-
-\begin{equation}
-    a = 346 [\frac{m}{s}]
-\end{equation}
-
-\begin{equation}
-    P_a = 101325 [Pa]
-\end{equation}
 
 \begin{equation}
     M_{eq} = \frac{W_{eq}}{a}
@@ -189,7 +197,8 @@ With this assumption, the speed of sound and atmospheric pressure becomes:
     P_0 = \frac{P_a}{(1+\frac{\gamma-1}{2}M^2_{eq})^{\frac{-\gamma}{\gamma-1}}}
 \end{equation}
 
-\noindent where $\gamma = 1.4$ is the specific heat ratio of air.\\
+\noindent where $\gamma = 1.4$ is the specific heat ratio of air, $a$ is the speed of sound, and $P_a$ is the atmospheric pressure.
+The speed of sound and atmospheric pressure was found assuming that the rocket is fired and flies near the surface of the Earth. \\
 
 \noindent Then, after guessing the diameter of the rocket, the thickness of the rocket shell can be calculated using the hoop stress equation shown below with $\sigma_s$ being the working stress of the rocket shell.
 
@@ -237,9 +246,21 @@ See Appendix for derivation of $X_{cp}$ and $X_{cg}$.
     X_{cg} = \frac{(M_{s,cone}+M_L)(\frac{2D}{3})+M_{s,body}(D+\frac{L+D}{2})+M_p((2D+L)-\frac{L_p}{2})+NM_{s,fin}(L+\frac{5D}{3})}{M_{s,cone}+M_{s,body}+M_p+NM_{s,fin}}
 \end{equation}
 
+\noindent The payload ratio $\lambda$ and structural ratio $\epsilon$ was calculating using the following equations.
 
+\begin{equation}
+    \lambda = \frac{M_L}{M_p+M_s}
+\end{equation}
 
+\begin{equation}
+    \epsilon = \frac{M_s}{M_s+M_p}
+\end{equation}
 
+\noindent The overall mass of the rocket could be found by summing all of the mass of the rocket's components.
+
+\begin{equation}
+    M_o = M_s + M_L + M_p
+\end{equation}
 
 \newpage
 \section*{Discussion of Results}
@@ -302,17 +323,15 @@ Then, to contain the increased pressure of the combustion chamber, the thickness
 \noindent From analyzing cases 4-6, we can see that by increasing the normalized acceleration $a^*_{max}$, the mass ratio $R_{opt}$, diameter $D$, propellant mass $M_p$, and overall mass $M_o$ of the rocket also increased.
 We can also see that $\delta/D$, $W_{eq}$, $t_b$, $P_o/P_a$, payload ratio $\lambda$, and structural ratio $\epsilon$ decreased with increased acceleration.
 These results make sense because to get increased thrust and acceleration, the burnout time of the rocket must decrease along with the equivalent velocity.
-$R_{opt}$ is directly calculated from the normalized acceleration so it increases.
 The decreased equivalent velocity means lower pressure ratio which leads to thinner shell thickness. 
-The mass of the propellant must increase drastically, to more than four times that of the lowest acceleration case compared to the highest, to propel enough mass for the increased acceleration.
-Because of this, the rocket also requires more shell material (more than double) and increased the total mass of the rocket.
+The mass of the propellant must increase drastically, with the highest acceleration case having more than four times the propellant compared to the lowest case.
+Because of this, the rocket also requires more shell material (more than double) which further increased the total mass of the rocket.
 We can also see that due to the increased mass while payload mass remains constant, the payload ratio drastically decreased to about 25\%. \\
 
-\noindent Analyzing cases 7-9, we can see that changing the static margin $SM$ does not affect the rocket's flight properties.
-However, it does affect the size of the rocket greatly. 
+\noindent Analyzing cases 7-9, we can see that changing the static margin $SM$ does not affect the rocket's flight properties but instead affect the rocket's size.
 By increasing the static margin of the rocket, the length, CG location, CP location, and structural ratio also increased.
-The rocket's diameter and payload ratio decreased with increasing static margin. 
-This result tells us that by increasing the static margin of the rocket, the resultant rocket will have to be skinnier, with larger L and smaller D. 
+The rocket's diameter and payload ratio decreased however with increasing static margin. 
+This result tells us that by increasing the static margin of the rocket, the resultant rocket will becomes skinnier, with larger L and smaller D. 
 Because of this, the location of the center of gravity and center of pressure must move with the increased length.
 The mass of the propellant also inreased slightly (\textasciitilde0.6\%), most likely due to the slightly increased shell mass and overall mass due to the longer rocket body.
 The structural ratio increased by a larger percentage (\textasciitilde12.9\%) because the shell mass increased more than the propellant mass, \textasciitilde13.7\% compared to \textasciitilde0.6\%.\\
@@ -331,12 +350,12 @@ The slight error in the CP location may be because we used the method prescribed
 
 \begin{figure}[h!]
     \centering
-    \fbox{\includegraphics[width = 0.75\textwidth]{./figures/idealCurve.png}}
-    \caption{OpenRocket Simulated Flight Results for Ideal Flight Case}
-    \label{fig:idealCurve}
+    \fbox{\includegraphics[width = 0.9\textwidth]{./figures/ideal.png}}
+    \caption{Simulated Flight Results for Ideal and Drag-Affected Rocket}
+    \label{fig:ideal}
 \end{figure}
 
-\noindent Figure \ref{fig:idealCurve} shows the simulated ideal flight of the OpenRocket model where drag is ignored. 
+\noindent Figure \ref{fig:ideal} shows the simulated ideal flight of the OpenRocket model where drag is ignored. 
 The simulation results tells us that the maximum altitude achieved by the rocket is 6134 meters which closely matches the expected altitude of 6096 meters, resulting in a 0.60\% error.
 The expected maximum velocity of the rocket was calculated to be 309.24 $\frac{m}{s}$.
 The simulated flight returned a maximum velocity of 309.84 $\frac{m}{s}$, resulting in an error of 0.19\%.
@@ -344,14 +363,8 @@ The maximum normalized acceleration from the simulated flight was 9.89 which is 
 This result tells us that the ideal flight case simulated in OpenRocket very closely matches our expected results.
 This accuracy is due to us ignoring the drag component of the rocket's flight.\\
 
-\begin{figure}[h!]
-    \centering
-    \fbox{\includegraphics[width = 0.75\textwidth]{./figures/dragCurve.png}}
-    \caption{OpenRocket Simulated Flight Results for Drag Affected Flight Case}
-    \label{fig:dragCurve}
-\end{figure}
 
-\noindent Figure \ref{fig:dragCurve} shows the simulated flight of the OpenRocket model where drag is not ignored.
+\noindent Figure \ref{fig:ideal} shows the simulated flight of the OpenRocket model where drag is not ignored.
 Comparing this figure to Fig. \ref{fig:idealCurve}, we can see that the drag drastically affected the rocket's maximum height, velocity, and acceleration.
 The simulated maximum altitude of the drag affected flight was only 1874 meters, 69.26\% less than the expected value and 69.49\% less than the idealized case.
 The maximum velocity of the drag affected flight was also lower at 215.31 $\frac{m}{s}$, 30.37\% less than the expected value and 30.51\% less than the idealized case.
@@ -363,7 +376,7 @@ This result is expected because the equations used when configuring the rocket i
 
 \begin{figure}[h!]
     \centering
-    \fbox{\includegraphics[width = 1\textwidth]{./figures/geoImprov.png}}
+    \fbox{\includegraphics[width = .9\textwidth]{./figures/geoImprov.png}}
     \caption{Flight Results for Geometrically Improved Rocket}
     \label{fig:geoImprov}
 \end{figure}
@@ -371,38 +384,35 @@ This result is expected because the equations used when configuring the rocket i
 \noindent To achieve greater max. altitude without increasing the amount of propellant, improvements were made to the geometry of the rocket.
 One of the improvements made to the rocket that also had the greatest impact was to switch the nose cone for one of a more aerodynamic shape.
 Of the five choices available in OpenRocket, the Haack Series cone shape appears to improve the rocket the most.
-From Fig. \ref{fig:geoImprov}, we can see that by switching the conical nose cone out for the Haack Series nose cone, the maximum altitude of the rocket increased from 1874 meters to 2235 meters, an increase of 19.26\%.
+From Fig. \ref{fig:geoImprov}, we can see that by switching the conical nose cone out for the Haack Series nose cone, the max. altitude of the rocket increased from 1874 meters to 2235 meters, an increase of 19.26\%.
 Another improvement made to the rocket was to give the fins of the rocket an airfoil cross-section and removing one of the fins, resulting in a three-fin design.
 Although doing so changed the center of pressure and center of mass of the rocket, the change was very small at only 3.04\%.
-With the changes in the fins, the maximum altitude of the OpenRocket model increased to 2253 meters, an improvement of 0.81\% from the previous and a total improvement of 20.22\% over the base design.
-Like the maximum altitude, the max. velocity of the rocket increased from 215.31 $\frac{m}{s}$ to 242.73 $\frac{m}{s}$ (+12.74\%).
+With the changes in the fins, the max. altitude of the rocket increased to 2253 meters, an improvement of 0.81\% from the previous and a total improvement of 20.22\% over the base design.
+Like the max. altitude, the max. velocity of the rocket increased from 215.31 $\frac{m}{s}$ to 242.73 $\frac{m}{s}$ (+12.74\%).
 The max. acceleration of the rocket actually decreased due to the more aerodynamic design, decreasing from 7.96 to 6.16 (-22.76\%).\\
 
 \begin{figure}[h!]
     \centering
-    \fbox{\includegraphics[width = 1\textwidth]{./figures/improv2.png}}
+    \fbox{\includegraphics[width = .9\textwidth]{./figures/improv2.png}}
     \caption{Flight Results for Material and Engine Improved Rocket}
     \label{fig:improv2}
 \end{figure}
 
 \noindent To further improve our rocket, the rocket's material was also changed.
 The purpose of changing the rocket's material is that lighter rockets require less force to accelerate.
-Since our rocket was designed so that the shell doubles as the combustion chamber, the shell material must still be strong enough to hold all the internal pressure.
-However, since only the area around the propellant have to be strong, the rest of the rocket can be made from a different material.
-Instead of carbon-epoxy, the material for the rocket shell was changed to be balsa, a very light wood.
-Compared to carbon-epoxy weighing at about 1.82 $\frac{g}{cm^3}$, balsa only weighs 0.17 $\frac{g}{cm^3}$, roughly 10 times less. 
+We will assume that the new material will be strong enough to withstand the internal pressures of the rocket since the shell mass is only a small portion of the rocket's total mass anyways.
+Instead of carbon-epoxy, weighing at about 1.82 $\frac{g}{cm^3}$, the material for the rocket shell was changed to be balsa, which only weighs 0.17 $\frac{g}{cm^3}$, roughly 10 times less.
 We can see from Fig. \ref{fig:improv2} that changing the material of the rocket increased the maximum altitude of the rocket from 2253 meters to 2264 meters, an increase of 0.49\%.
 This increase in maximum altitude is very small because the propellant was what contributed to most of the rocket's weight, not its shell.
 The max. velocity and max. acceleration of the rocket increased slightly from 242.73 $\frac{m}{s}$ to 246.64 $\frac{m}{s}$ (+1.61\%) and 6.16 to 6.57 (+6.48\%) respectively.
-
+\\
 
 \begin{figure}[h!]
     \centering
-    \fbox{\includegraphics[width = .5\textwidth]{./figures/burnprof.png}}
+    \fbox{\includegraphics[width = .8\textwidth]{./figures/burnprof.png}}
     \caption{Burn Profile of New Engine}
     \label{fig:burnprof}
 \end{figure}
-
 
 \noindent The final improvement made to the rocket was to alter its burn-profile to make it more efficient.
 A new burn profile was created where instead of a linear burn throughout the entire burn time, the propellant was burnt faster towards the launch and slower as the burn carries on.
@@ -412,35 +422,287 @@ We can see from Fig. \ref{fig:improv2} that with the new burn profile, the rocke
 The max. velocity and max. acceleration decreased from 246.64 $\frac{m}{s}$ to 213.64 $\frac{m}{s}$ (-13.38\%) and 6.57 to 6.65 (-44.45\%).
 Although the max. velocity decreased, the rocket increased in velocity much sooner, allowing it to travel at fast speed for longer, resulting in greater altitude. 
 
+\newpage
+\section*{Summary and Conclusion}
+\addcontentsline{toc}{section}{Summary and Conclusion}
 
+When designing a rocket, there are many parameters and variables that can affect the overall performance.
+Even with the simple rocket design studied in this project, a simple change in one input affects a number of other rocket properties.
+From part I of this project, we learned that to increase the max. altitude of a rocket, its burnout time and equivalent velocity must increase. 
+This leads to increased internal pressure and requires a thicker shell to contain the pressure.
+To increase the normalized acceleration of the rocket, we must also drastically increase the amount of propellant while also decreasing the burnout time, equivalent velocity, and internal pressure.
+Finally, if we want to increase the static margin of the rocket, we must make the rocket longer and thinner.\\
 
+\noindent The OpenRocket software very helpful and allowed us to experiment by test-flying different rocket configurations.
+From the experimentation, we found out that drag plays a very big role in rocket performance. 
+By considering drag, the maximum altitude reached by our rocket decreased by 69.26\%, resulting in less than half the height.
+However, by changing certain design parameters of our rocket, we were able to improve our rockets performance.
+By changing the conical nose cone for a Haack Series nose cone, we increased our max. altitude by 19.26\%.
+We found out that altering the fin geometry does not seem to have a drastic effect on the performance although it would have a larger effect on rockets that do not fly straight up.
+Changing the material of the rocket shell also did not seem to have much of an effect on performance because the propellant was responsible for most of the rocket's weight, not its shell.
+Altering the rocket engine's burn profile however did make a big impact on the rocket's performance.
+By letting the rocket burn faster towards the beginning of launch and decreasing the burn towards the end, we were able to increase the rocket's max. altitude by 16.12\%.
+In total, with all of the improvements on the rocket, we were able to increase it's max. altitude from 1874 meters to 2639 meters, resulting in an increase of 40.82\%.\\
+
+\noindent From this study, the most important thing we learned is that drag cannot be ignored for a rocket due to its high speed.
+Although a rocket is already aerodynamic, drag scales exponentially as velocity increases.
+Therefore, much attention should be placed on the aerodynamic properties of a rocket during its design.
+Another very important aspect to pay attention to is the burn profile of the rocket motor. 
+By altering the burn profile, even rockets with the same propellant mass can reach much higher altitudes.
 
 \newpage
 \section*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
 
-\begin{equation}
+\title{Appendix A}\\
+
+\noindent This portion contains the equations used to derive the final equation used to calculate the location of center of pressure and center of gravity on the rocket.
+
+\begin{equation*}
     (C_{N\alpha})_n=2
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
     \bar{X}_n = \frac{2L}{3}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
     (C_{N\alpha})_f = \frac{16}{1+\sqrt{1+(2.5D)^2}}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
     \bar{X}_f = L+D+\frac{D}{2}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
     k_{fb} = 1 + \frac{D}{3D}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
     X_{cp} = \frac{(C_{N\alpha})_n\bar{X}_n + k_{fb}(C_{N\alpha})_f\bar{X}_f}{(C_{N\alpha})_n+k_{fb(C_{N\alpha})_f}}
-\end{equation}
+\end{equation*}
+
+\begin{equation*}
+    X_{cg} = \frac{\sum M_i \bar{X}_i}{\sum M_i}
+\end{equation*}
+
+\newpage
+\title{Appendix B}\\
+
+\noindent This portion contains the Python code for the rocket configuration program. 
+
+\begin{lstlisting}
+
+    # Stephen Chen
+    # MAE423: Intro to Propulsion
+    # Created: 4/23/2021
+
+    import math
+
+    # Defining inputs
+    Ml = 5  # Payload Mass [kg]
+    ps = 1820  # Shell Density (carbon-epoxy) [1kg/m^3]
+    pp = 1772  # Propellant Density (66 - 78% AP, 18% organic polymer, 4 - 20% Al) [kg/m^3]
+    sigs = 80000000  # Shell Working Stress [Pa]
+    N = 4  # Number of fins
+    hmaxList = [3048, 6096, 9144]  # Maximum Altitude [m] (10k, 20k, 30k ft)
+    amaxList = [5, 10, 20]  # Normalized Max Acceleration
+    SMList = [1, 2, 3]  # Static Margin (Xcp-Xcg)/D
+    g = 9.81  # Acceleration due to Gravity [m/s^2]
+
+    # Defining constants
+    gamma = 1.4  #
+    pa = 101325  # Atmospheric pressure [Pa]
+    a = 346      # Speed of sound at sea-level [m/s]
+
+    rocketList = []
+    lambdas = []
+    newRockets = []
+
+
+    class Rocket():
+        def __init__(self, h, a, sm):
+            self.hmax = h
+            self.amax = a
+            self.SM = sm
+            self.CGmatch = False
+            self.deltaD = 0.001
+            self.deltaL = 0.001
+            self.tol = 10**-5
+            self.lMax = 5  # Max length of rocket [m]
+            self.dMax = 3  # Max diameter of rocket [m]
+            self.lambdaMax = 0
+            self.e = 0
+            self.mdot = 0
+            self.thrust = 0
+            self.ropt, self.weq, self.tb, self.Meq, self.p0, self.delta, self.d, self.l, self.Xcp, self.Xcg, self.lambd, self.Mp, self.Ms, self.Lp = 0, 0, 0, 0, 0, 0, 0.001, 0.001, 0, 0, 0, 0, 0, 0
+
+        def __str__(self):
+            return "lambda: "+ str(self.lambd) + " d: " + str(self.d) + " l: " + str(self.l) + " delta: "+str(self.delta) + " Ms: "+str(self.Ms) + " Mp: "+str(self.Mp) + '\n' \
+                + " Lp: "+str(self.Lp) + " Xcg: " + str(self.Xcg) + " Xcp: " + str(self.Xcp) + " Ropt: " + str(self.ropt) + " Weq: " + str(self.weq) + " tb:" + str(self.tb) + '\n' \
+                    + " P0/Pa" + str(self.p0/pa) + " e: " + str(self.e) + " hmax: " + str(self.hmax) + " amax: " + str(self.amax) + " SM: " + str(self.SM) + " T: " + str(self.thrust)
+
+        # Step 1, calculate Ropt, Wep, tb, P0
+        def Eq1(self):  # returns: [ropt, weq, tb]
+            self.ropt = self.amax + 1
+            self.weq = math.sqrt((self.hmax * g) / ((math.log(self.ropt) / 2) * (math.log(self.ropt) - 2) + ((self.ropt - 1) / self.ropt)))
+            self.tb = ((self.ropt - 1) * self.weq) / (g * self.ropt)
+            self.Meq = self.weq / a
+            self.p0 =  pa / ((1 + (gamma - 1) * 0.5 * self.Meq ** 2) ** (-gamma / (gamma - 1)))
+            # return [ropt, weq, tb, p0]
+
+        # Step 2, after guess D and L, calculate Ms, Mp, Lp, Xcp, Xcg
+        def Eq2(self):
+            self.delta = self.d * self.p0 / (2 * sigs)  # Thickness of the shell due to material limitations
+
+            # Calculating mass of the rocket (shell and propellant)
+            SAbody = math.pi * self.d * (self.l + self.d)  # Surface area of the body tube
+            Afin = 0.5 * (self.d ** 2)  # Cross-sectional area of one fin
+            SAcone = 0.5 * math.pi * self.d * (0.5 * self.d + math.sqrt(self.d ** 2 + 0.25 * self.d ** 2))  # Surface area of the rocket cone
+
+            Msbody = SAbody * self.delta * ps  # Assuming cylindrical shell and shell thickness << diameter
+            Msfin = Afin * self.delta * ps  # Assuming fin thickness is equal to shell thickness
+            Mscone = SAcone * self.delta * ps  # Calculated using surface area of cone
+
+            self.Ms = Msbody + N * Msfin + Mscone  # Total mass of the rocket shell
+            self.Mp = (self.ropt - 1) * (self.Ms + Ml)  # Mass of propellant
+            self.Lp = self.Mp / (math.pi * self.d * self.d * pp * 0.25)  # Length of the propellant tube
+
+            # Calculating Xcp
+            # For nose cone
+            Cncone = 2
+            xconebar = (2/3)*self.d
+
+            # For fin
+            a = self.d
+            m = self.d
+            b = 0
+            l = math.sqrt((0.5*self.d)**2+self.d**2)
+            s = self.d
+            Cnfin = (4*N*(s/self.d)**2)/(1+math.sqrt(1+((2*l)/(a+b))**2))
+            xfbar = self.l+self.d+(m*(a+2*b))/(3*(a+b))+(1/6)*(a+b-(a*b)/(a+b))
+            kfb = 1+(self.d/2)/s+(self.d/2)
+            Cnfinb = Cnfin*kfb
+
+            self.Xcp = (Cncone*xconebar+Cnfinb*xfbar)/(Cncone+Cnfinb)
+
+            # Calculating Xcg
+            mcg = (Mscone + Ml) * (2 / 3) * self.d + Msbody * (self.d + (self.l + self.d) * 0.5) + self.Mp * ((2 * self.d + self.l) - 0.5 * self.Lp) + N * Msfin * (
+                        self.d + self.l + (2 / 3) * self.d)
+            # print(mcg)
+            self.Xcg = mcg / (self.Ms + Ml + self.Mp)
+            # return [Xcp, Xcg]
+
+        def UpdateD(self):
+            self.d += self.deltaD
+
+        def UpdateL(self):
+            self.l += self.deltaL
+
+        def ResetL(self):
+            self.l = 0.01
+
+        def CheckMaxD(self):
+            if self.d < self.dMax:
+                return False
+            else:
+                return True
+
+        def CheckMaxL(self):
+            if self.l < self.lMax:
+                return False
+            else:
+                return True
+
+        def CheckCGMatch(self):
+            if abs(self.Xcp - self.Xcg - self.d * self.SM) < self.tol:
+                return True
+            else:
+                return False
+
+        def CalcLambda(self):
+            self.lambd = round(Ml / (self.Mp + self.Ms), 6)
+            self.e = round(self.Ms/(self.Ms+self.Mp), 6)
+            self.mdot = self.Mp/self.tb
+            self.thrust = self.weq*self.mdot
+
+        def LpValid(self):
+            if self.Lp > self.l+self.d:
+                return False
+            else:
+                return True
+
+
+    # Creates 27 different rockets with different input parameters
+    def CreateRockets27():
+        for h in hmaxList:
+            for amax in amaxList:
+                for sm in SMList:
+                    rocket = Rocket(h, amax, sm)
+                    rocket.Eq1()
+                    rocketList.append(rocket)
+
+
+    # Creates 9 rockets by using medium value for unfocused parameters
+    def CreateRockets9():
+        for h in hmaxList:
+            rocket = Rocket(h, amaxList[1], SMList[1])
+            rocket.Eq1()
+            rocketList.append(rocket)
+
+        for amax in amaxList:
+            rocket = Rocket(hmaxList[1], amax, SMList[1])
+            rocket.Eq1()
+            rocketList.append(rocket)
+
+        for sm in SMList:
+            rocket = Rocket(hmaxList[1], amaxList[1], sm)
+            rocket.Eq1()
+            rocketList.append(rocket)
+
+
+    # Iteratively configures the rocket's size
+    def ConfigureRockets():
+        global newRockets
+        for rocket in rocketList:
+            print("Testing rocket for hmax = " + str(rocket.hmax) + ", amax = " + str(rocket.amax) + ", SM = " + str(rocket.SM))
+            validRockets = {}
+            bestLambda = 0
+            while not (rocket.CheckMaxD() and rocket.CheckMaxL()):
+                rocket.Eq2()
+                if rocket.LpValid():
+                    if rocket.CheckCGMatch():
+                        rocket.CalcLambda()
+                        lambdas.append(rocket.lambd)
+                        if rocket.lambd > bestLambda:
+                            validRockets[rocket.lambd] = (rocket.l, rocket.d)
+                            bestLambda = rocket.lambd
+                if not rocket.CheckMaxL():
+                    rocket.UpdateL()
+                else:
+                    rocket.ResetL()
+                    rocket.UpdateD()
+            validMax = max(validRockets.keys())
+            (maxl, maxd) = validRockets[validMax]
+            newRock = Rocket(rocket.hmax, rocket.amax, rocket.SM)
+            newRock.l = maxl
+            newRock.d = maxd
+            newRock.Eq1()
+            newRock.Eq2()
+            newRock.CalcLambda()
+            newRockets.append(newRock)
+
+    CreateRockets9()
+    ConfigureRockets()
+
+    print(lambdas)
+    print(len(lambdas))
+    print(max(lambdas))
+    for each in newRockets:
+        print(each)
+        print('')
+
+
+\end{lstlisting}
 
 \end{document}
