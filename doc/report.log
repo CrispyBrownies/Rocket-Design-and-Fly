@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.8)  11 MAY 2021 17:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.8)  11 MAY 2021 17:04
 entering extended mode
 **c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex
 (c:/Users/Steph/PycharmProjects/Rocket-Design-and-Fly/doc/report.tex
@@ -391,38 +391,38 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 56.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 57.
+LaTeX Font Info:    Trying to load font information for FML+futm on input line 57.
  (C:\Users\Steph\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 56.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 56.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 57.
+LaTeX Font Info:    Trying to load font information for FMS+futm on input line 57.
  (C:\Users\Steph\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 56.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 56.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 57.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 57.
  (C:\Users\Steph\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -460,7 +460,7 @@ LaTeX Font Info:    ... okay on input line 56.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 56.
+(lastpage)             ! on input line 57.
 (C:\Users\Steph\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count292
@@ -484,14 +484,14 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 56.
+LaTeX Info: Redefining \microtypecontext on input line 57.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 56.
+LaTeX Info: Redefining \showhyphens on input line 57.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -501,32 +501,32 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/futs/m/n --> TS1/futs/b/n on input line 56.
-Package gensymb Info: Math companion symbols declared on input line 56.
-LaTeX Info: Redefining \degree on input line 56.
-LaTeX Info: Redefining \celsius on input line 56.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 56.
-LaTeX Info: Redefining \ohm on input line 56.
-Package gensymb Info: Using \textohm for \ohm on input line 56.
-Package gensymb Info: Using \textmu for \micro on input line 56.
+(Font)                  TS1/futs/m/n --> TS1/futs/b/n on input line 57.
+Package gensymb Info: Math companion symbols declared on input line 57.
+LaTeX Info: Redefining \degree on input line 57.
+LaTeX Info: Redefining \celsius on input line 57.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 57.
+LaTeX Info: Redefining \ohm on input line 57.
+Package gensymb Info: Using \textohm for \ohm on input line 57.
+Package gensymb Info: Using \textmu for \micro on input line 57.
 \c@lstlisting=\count298
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line 76.
+LaTeX Font Info:    Trying to load font information for FML+futmi on input line 77.
  (C:\Users\Steph\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 76.
+(Font)              scaled to size 11.03998pt on input line 77.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 76.
+(Font)              scaled to size 8.27998pt on input line 77.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 76.
+(Font)              scaled to size 6.43999pt on input line 77.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 76.
+(Font)              scaled to size 11.03998pt on input line 77.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 76.
+(Font)              scaled to size 8.27998pt on input line 77.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 76.
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 76.
+(Font)              scaled to size 6.43999pt on input line 77.
+LaTeX Font Info:    Trying to load font information for TS1+futs on input line 77.
  (C:\Users\Steph\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
@@ -559,55 +559,55 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 <./figures/rocketShape.png, id=10, 345.54094pt x 517.935pt>
 File: ./figures/rocketShape.png Graphic file (type png)
 <use ./figures/rocketShape.png>
-Package pdftex.def Info: ./figures/rocketShape.png  used on input line 99.
+Package pdftex.def Info: ./figures/rocketShape.png  used on input line 100.
 (pdftex.def)             Requested size: 131.01692pt x 196.38557pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+Underfull \hbox (badness 10000) in paragraph at lines 129--132
 
  []
 
 [2 <./figures/rocketShape.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--135
+Underfull \hbox (badness 10000) in paragraph at lines 133--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--146
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 317--322
+Underfull \hbox (badness 10000) in paragraph at lines 318--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--330
+Underfull \hbox (badness 10000) in paragraph at lines 324--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--338
+Underfull \hbox (badness 10000) in paragraph at lines 332--339
 
  []
 
@@ -615,31 +615,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--338
 <./figures/rocketDesign.png, id=33, 729.47531pt x 291.33844pt>
 File: ./figures/rocketDesign.png Graphic file (type png)
 <use ./figures/rocketDesign.png>
-Package pdftex.def Info: ./figures/rocketDesign.png  used on input line 341.
+Package pdftex.def Info: ./figures/rocketDesign.png  used on input line 342.
 (pdftex.def)             Requested size: 362.37569pt x 144.72641pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--350
+Underfull \hbox (badness 10000) in paragraph at lines 347--351
 
  []
 
 <./figures/ideal.png, id=34, 693.34032pt x 478.78876pt>
 File: ./figures/ideal.png Graphic file (type png)
 <use ./figures/ideal.png>
-Package pdftex.def Info: ./figures/ideal.png  used on input line 353.
+Package pdftex.def Info: ./figures/ideal.png  used on input line 354.
 (pdftex.def)             Requested size: 407.66833pt x 281.52586pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--365
+Underfull \hbox (badness 10000) in paragraph at lines 359--366
 
  []
 
 
-LaTeX Warning: Reference `fig:idealCurve' on page 7 undefined on input line 368.
+LaTeX Warning: Reference `fig:idealCurve' on page 7 undefined on input line 369.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--376
+Underfull \hbox (badness 10000) in paragraph at lines 368--377
 
  []
 
@@ -647,14 +647,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 367--376
 <./figures/geoImprov.png, id=39, 693.34032pt x 479.54156pt>
 File: ./figures/geoImprov.png Graphic file (type png)
 <use ./figures/geoImprov.png>
-Package pdftex.def Info: ./figures/geoImprov.png  used on input line 379.
+Package pdftex.def Info: ./figures/geoImprov.png  used on input line 380.
 (pdftex.def)             Requested size: 407.66833pt x 281.9685pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--393
+Underfull \hbox (badness 10000) in paragraph at lines 385--394
 
  []
 
@@ -662,42 +662,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--393
 <./figures/improv2.png, id=44, 693.34032pt x 479.54156pt>
 File: ./figures/improv2.png Graphic file (type png)
 <use ./figures/improv2.png>
-Package pdftex.def Info: ./figures/improv2.png  used on input line 396.
+Package pdftex.def Info: ./figures/improv2.png  used on input line 397.
 (pdftex.def)             Requested size: 407.66833pt x 281.9685pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--409
+Underfull \hbox (badness 10000) in paragraph at lines 402--410
 
  []
 
 <./figures/burnprof.png, id=45, 475.7775pt x 305.64188pt>
 File: ./figures/burnprof.png Graphic file (type png)
 <use ./figures/burnprof.png>
-Package pdftex.def Info: ./figures/burnprof.png  used on input line 412.
+Package pdftex.def Info: ./figures/burnprof.png  used on input line 413.
 (pdftex.def)             Requested size: 362.37569pt x 232.80324pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9 <./figures/geoImprov.png>] [10 <./figures/improv2.png> <./figures/burnprof.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 429--435
+Underfull \hbox (badness 10000) in paragraph at lines 430--436
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--446
+Underfull \hbox (badness 10000) in paragraph at lines 437--447
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
